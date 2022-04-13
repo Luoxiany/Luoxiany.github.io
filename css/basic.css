@@ -1,0 +1,25 @@
+@font-face{
+    font-family: "雅宋体";
+    src:url('../fonts/方正特雅宋.ttf');
+}
+@font-face {
+    font-family: "文宋体";
+    src: url('../fonts/思源宋体.otf');
+}
+@font-face {
+    font-family: "文楷体";
+    src: url('../fonts/楷体.ttf');
+}
+@font-face {
+    font-family: "仿宋体";
+    src: url('../fonts/仿宋.ttf');
+}
+#title{
+    font-family: "文楷体";
+    text-align:left;
+    font-size:35px;
+}
+p{
+    font-family: "仿宋体";
+    font-size:20.5px;
+}
