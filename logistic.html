@@ -5,8 +5,20 @@
     </head>
     <body>
         <script>
-            var enter = prompt('请输入单号');
-            var link = "logistic/" + enter + ".html";
+            var enter = prompt('请输入单号（目前仅支持企鹅物流、邮政挂号邮件查询）');
+            
+            if (enter.search('PLM') != -1)
+            {
+                var link = "logistic/" + enter + ".html";
+            }
+            else if (enter.search('XA') != -1 || enter.search('XB') != -1 || enter.search('SA') != -1 || enter.search('SB') != -1)
+            {
+                var link = "http://yjcx.chinapost.com.cn/qps/yjcx";
+            }
+            else 
+            {
+                var link = "https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4";
+            }
             document.write("单号："+enter);
             window.location.href=link;
         </script>
